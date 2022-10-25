@@ -1,0 +1,13 @@
+config:
+  target: "https://62svdiesmwo63snvelwrtgtwvy0fqoeg.lambda-url.eu-west-1.on.aws"
+  phases:
+    - duration: 10
+      arrivalRate: 5
+      rampTo: 50
+      name: Harsh
+
+scenarios:
+  - name: "No hope"
+    flow:
+      - post:
+          url: "/"
